@@ -1,0 +1,155 @@
+---
+title: "비트캠프 자바 과정 1일차"
+related: true
+layout: splash
+classes:
+  - landing
+  - dark-theme
+categories: Java
+
+---
+
+# Java
+
+비트 캠프 자바 과정 강의노트입니다.
+
+## 요약
+
+- 개발 입문자 오리엔테이션
+
+- 애플리케이션 개발 소개
+
+- 애플리케이션 개발 도구 설치
+
+
+
+## S/W Overview
+
+- 소프트웨어: 컴퓨터(pc, atm, smartphone 에어콘, 저울 등)를 **제어하는 명령어**
+  - 시스템 소프트웨어 (H/W 제어)
+    - **운영체제** OS(Operating System)
+      - Mac, Windows, Linux, Android...
+    - **드라이버**: 프린터, 스캐너 등 제어(control), 조종(drive)
+    - **임베디드**: 내장형 시스템
+      - 반도체 ROM (칩) (하드웨어) 안 메모리 속에 개발자가 작성한 명령어가 있음
+  - 응용 소프트웨어(Application Software): 하드웨어 위에서 실행됨
+    - 데스크톱 애플리케이션 (Standalone Application): 홀로
+      - ex) 포토샵, 메모장, 앱, 게임, 엑셀, 워드 등
+      - C/C++, C# 언어 사용
+      
+    - **C/S (클라이언트/서버) 애플리케이션**
+      
+      ![CSapp](https://user-images.githubusercontent.com/50407047/87386177-db3d6e00-c5da-11ea-86a2-f228e6b9776e.jpg)
+      
+      - 네트워크 연결이 되어야 작동됨
+      - ex) 네트워크 게임, 메신저, 메일, 게시판, 카페, 쇼핑몰 등
+      - ex) (App2) 게임 유저(클라이언트) = 요청 => <=응답= (App1) 게임 서버
+      - **전용**
+      - C/C++, C#, PHP, ASP, Java, Python 등
+      - 종류
+        - TCP/UDP(Transmission Control Protocol/User Datagram Protocol) 애플리케이션
+          - TCP: 인터넷상에서 데이터를 메세지의 형태로 보내기 위해 IP와 함께 사용하는 프로토콜
+          - UDP: 데이터를 데이터그램 단위로 처리하는 프로토콜 
+          - ex) 네트워크 게임, 메신저, 채팅, FTP 등
+        - **HTTP 애플리케이션** (웹 애플리케이션)
+          - 개발자 수요 70% 이상
+          - 웹 브라우저를 사용해서 실행하는 프로그램
+          - ex) 웹 메신저, 웹 메일, 쇼핑몰, 업무 시스템
+          - HTML, CSS, JavaScript, Java, SQL, XML 등
+
+![Web Development Overview](https://user-images.githubusercontent.com/50407047/87268231-defec100-c504-11ea-93c7-a922c8a7ecfd.jpg)
+
+
+
+
+
+## Java 개발 환경 셋팅
+
+![JDK](https://user-images.githubusercontent.com/50407047/87276251-ec26aa80-c51a-11ea-8733-4785e9dab565.jpg)
+
+- Sun Enterprise
+  - Standard Edition(SE)
+    - 컴파일러, JVM, 디버거 등
+    - Java App. 개발
+    - 종류
+      - `JRE`(Java Runtime Environment)
+        - Java App. 실행시키는 S/W (사용자 입장)
+        - **runtime** = Viewer, Playout, Engine, interpreter, Parser
+        - JVM
+      - `JDK`(Java Development Kit)
+        - Java App. 만드는 S/W
+        - Compiler, Debugger
+        - `JRE` 포함: JDK 설치하면 JRE 자동 설치(for test)
+  - Enterprise Edition (EE)
+    - 서버 App. 개발에 필요한 도구
+  - Micro Edition(ME)
+- Open JDK
+  - GraalVM: Open JDK 포함하고 있음
+
+
+
+- Java는 Python과 달리 상위버전은 하위버전을 100% 포함
+
+
+
+- **Package Manager**
+  - Mac의 `brew`나 , Linux의 `apt-get`. Window에는 공식 Package Manager 없음
+  - `scoop`, `chocholatey`사용 가능
+  - 공식 Package Manaer `windget` 개발 중 
+  - 설치파일 찾으러 다니거나 업데이트 일일이 할 것 없이 명령어 한 줄로 설치, 업데이트 삭제까지 가능
+
+
+
+## 체크섬 및 해시값 확인 (`checksum`, `hash value`)
+
+- 프로그램을 다운로드 받아서 설치하기 전에 해당 프로그램이 제대로 설치되어 있는지 확인하는 방법
+  - 해당 파일이 변조되어 있지 않은지 확인: 누군가 해킹코드를 심어 넣은 프로그램을 다운받았을 수 있음
+- 체크섬 할 수 있는 해쉬 값은 공식 사이트에 올려져 있거나 최초 배포값
+- md5, sha1, sha256, sha512.. 
+- 다운로드 한 파일이 원본과 같은지 비교
+- xcode(도구)를 외부 텐센트에서 다운로드 받아 app을 빌드했음. 근데 그 도구(소프트웨어) 자체에 해킹코드가 삽입되어 있었음. 그래서 사용자가 앱을 사용할 때 그 해킹코드가 있는 앱을 사용하면서 데이터를 해커 서버에 전송(upload)된 경우
+- 다운로드 받은 파일이 서버에 있는 파일과 같은 지 방법
+  - Windows 10 의 Powershell에서 이 chcksum 확인하는 기능을 제공한다.
+    1. Windows Powershell을 실행한다.
+    2. 다운로드한 파일이 있는 폴더로 이동한다.
+    3. `get-filehash -algorithm {공식명} '파일명.확장자명' | Format-List` 
+    4. 공식사이트의 `checksum`과 비교하여 확인한다.
+
+```powershell
+PS C:\Users\bitcamp\Downloads> get-filehash -algorithm sha512 'mariadb-10.5.4-winx64.msi' | Format-List
+
+Algorithm : SHA512
+Hash      : 00043DAC2BA0659DF43A07BD4D9ED06C3F82CA143AC57A9C0AD5970B294766523AA66A3F280FE77CC30FD5490A504ECE1152D83C07087EB766AB1280A26901A1
+Path      : C:\Users\bitcamp\Downloads\mariadb-10.5.4-winx64.msi
+```
+
+- graalVM 속 폴더들
+  - `bin`(binary)
+    - 실행할 수 있는 명령어가 들어있는 폴더
+    - 들어 있는 파일들
+      - java.exe: 자바 프로그램 플레이어
+      - javac.exe: 자바 프로그램 만들어줌
+  - conf(config)
+    - 프로그램을 실행함에 있어서 **설정 정보**가 들어있는 폴더
+  - include
+    - 실행 파일에서 필요한 라이브러리 들어있음
+  - lib
+    - 자바 관련되어 필요한 모든 명령어들
+- 환경변수 설정
+  - 사용자변수: bitcamp 사용자만 사용 가능
+  - 시스템변수: 어떤 사용자를 만들어도 사용 가능
+
+```powershell
+> java.exe -version
+openjdk version "11.0.7" 2020-04-14
+OpenJDK Runtime Environment GraalVM CE 20.1.0 (build 11.0.7+10-jvmci-20.1-b02)
+OpenJDK 64-Bit Server VM GraalVM CE 20.1.0 (build 11.0.7+10-jvmci-20.1-b02, mixed mode, sharing)
+
+
+```
+
+- Mac 자체가 Linux
+  - 패키지 매니저 프로그램이 있음(home brew.. )
+  - 윈도우즈에서 위와 같은 패키지 매니저 사용 하려면 `scoop`이나 `chocolate`써라: `winget` 개발 중
+  - 굳이 공식 사이트 가서 다운 받아서 설치하고 *환경변수* 등록할 필요 X 
+
