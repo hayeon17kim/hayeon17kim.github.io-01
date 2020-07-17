@@ -12,15 +12,15 @@
 
 theme                    : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "violet" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Casa de Monica"
+title                    : "monimoni"
 title_separator          : "-"
-subtitle                 : "개발 블로그" # site tagline that appears below site title in masthead
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Monica Kim"
-description              : "공부한 내용을 올립니다."
+description              : "개발 공부를 하며 배우고 느낀 것에 대해 기록하는 공간입니다."
 url                      : "https://hayeon17kim.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hayeon17kim/hayeon17kim.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Monica"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "개발 공부를 하고 있습니다."
+  bio              : "배우고 느낀 것을 기록하는 공간입니다."
   location         : "Seoul, Korea"
   email            :
   links:
