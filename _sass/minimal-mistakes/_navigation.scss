@@ -42,7 +42,7 @@
   }
 
   .current {
-    font-weight: bold;
+    font-weight: medium;
   }
 }
 
@@ -185,6 +185,7 @@
     color: $masthead-link-color;
     text-decoration: none;
     font-weight: bold;
+    letter-spacing: 3;
 
     &:hover {
       color: $masthead-link-color-hover;
@@ -498,20 +499,21 @@
      ========================================================================== */
 
 .toc {
-  font-family: $sans-serif-narrow;
-  color: $gray;
+  font-family: $monospace;
+  //color: $gray;
   background-color: $background-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  -webkit-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+  //border: 1px solid $border-color;
+  //border-radius: $border-radius;
+  //-webkit-box-shadow: $box-shadow;
+  //box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: $text-color;
     font-size: $type-size-6;
-    background: $primary-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    font-family: $monospace;
+    //background: $primary-color;
+    //border-top-left-radius: $border-radius;
+    //border-top-right-radius: $border-radius;
   }
 
   // Scrollspy marks toc items as .active when they are in focus
@@ -526,9 +528,11 @@
   width: 100%;
   list-style: none;
   font-size: $type-size-6;
+  font-family: $monospace;
+  text-decoration: underline;
 
   @include breakpoint($large) {
-    font-size: $type-size-7;
+    font-size: $type-size-5;
   }
 
   a {
@@ -536,16 +540,18 @@
     padding: 0.25rem 0.75rem;
     color: $muted-text-color;
     font-weight: bold;
+    font-size: $type-size-5;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    //border-bottom: 1px solid $border-color;
 
     &:hover {
-      color: $text-color;
+      color: $link-color;
     }
   }
 
   li ul > li a {
     padding-left: 1.25rem;
+    font-size: $type-size-6;
     font-weight: normal;
   }
 
@@ -562,6 +568,6 @@
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
   }
 }
