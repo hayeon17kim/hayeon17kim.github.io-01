@@ -97,7 +97,7 @@ Gradle로 생성한 프로젝트 설정 파일과 폴더를 확인하자.
 - (2)`gradlew`: gradle로 빌드한 프로젝트를 누군가 서버에 올리고 동료가 클론했을 때, 동료는 굳이 따로 gradle을 설치하지 않아도 `gradlew` 파일이 (1) `gradle-wrapper.jar`를 풀어서 실행할 수 있게 한다.
 - (3)`settings.gradle`: 프로젝트 이름은 `settings.gradle` 파일 안에 `rootProject.name = '프로젝트이름'`으로 적혀 있다.
 
-#### 2. 자바 애플리케이션 실행하기
+## 2. 자바 애플리케이션 실행하기
 
 `gradle run`
 
@@ -121,7 +121,7 @@ application {
 
 `gradle build`
 
-##### 빌드 절차
+### 빌드 절차
 - 소스 파일 컴파일
 - 단위 테스트 수행
 - .jar 아카이브 파일 생성
