@@ -1,7 +1,7 @@
 ---
 title: "git clone 에러: certificate verification failed"
 categories: error
-tags: error, linux
+tags: [ error, linux ]
 ---
 
 https 프로토콜을 사용해 git clone을 하던 중 다음과 같은 인증서 에러가 발생했다.
