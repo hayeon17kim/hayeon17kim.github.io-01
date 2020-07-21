@@ -16,4 +16,4 @@ certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLf
 ```
 git config --global http.sslVerify false
 ```
-git의 ssl veryfy 옵션을 끈다. --global을 주어 전역적으로 설정하고, [http] 섹션에 sslVerify = false를 추가한다.
+git의 ssl verify 옵션을 끈다. --global을 주어 전역적으로 설정하고, [http] 섹션에 sslVerify = false를 추가한다.
