@@ -24,11 +24,18 @@ ZSH_THEME="robbyrussell" # 여기에 원하는 테마 이름을 넣어주자!
 
 #### 테마 종류
 대표적인 테마는 다음과 같다.
-- agnoster
+
+**agnoster**
+
 ![agnoster](https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png)
-- wezm
+
+**wezm**
+
 ![wezm](https://cloud.githubusercontent.com/assets/1441704/6315419/915f6ca6-ba01-11e4-95b3-2c98114b5e5c.png)
-- sunrise
+
+
+**sunrise**
+
 ![sunrise](https://cloud.githubusercontent.com/assets/2618447/6316766/51fbf062-ba00-11e4-9b66-2b0da5a0dbbc.png)
 
 여기서는 wezm 테마를 선택하겠다. 
@@ -39,5 +46,5 @@ ZSH_THEME="wezm"
 
 #### 결과
 
-터미널을 끄고 다시 실행하면 테마가 적용된 것을 확인할 수 있다.
+터미널을 끄고 다시 실행하면 다음과 같이 테마가 적용된 것을 확인할 수 있다.
 ![ohmyzsh-theme-wezm](https://user-images.githubusercontent.com/50407047/88047023-e7519e80-cb8b-11ea-88e0-4d024b70d828.png)
