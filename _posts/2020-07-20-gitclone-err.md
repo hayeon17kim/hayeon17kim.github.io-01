@@ -1,5 +1,5 @@
 ---
-title: "git clone 에러: certificate verification failed"
+title: "🐛 git clone 에러: certificate verification failed"
 categories: error
 tags: [ error, linux ]
 ---
