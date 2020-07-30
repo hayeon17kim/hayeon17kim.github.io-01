@@ -62,4 +62,4 @@ float r = f1 * f2 - 0.01f;
 System.out.println(Math.abs(r) <= Float.POSITIVE_INFINITY);
 ```
 
-
+위의 코드에서는 직접 오차범위를 정하지 않고 자바에 정의된 Float.POSITIVE_INFINITY 값을 오차범위로 사용하였다.
