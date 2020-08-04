@@ -1,5 +1,5 @@
 ---
-title: "정보처리기사 필기 2장. 화면 설계"
+title: "⚡ 정보처리기사 필기 2장. 화면 설계"
 categories: 정보처리기사
 tags: [ 정보처리기사 ]
 toc: true
