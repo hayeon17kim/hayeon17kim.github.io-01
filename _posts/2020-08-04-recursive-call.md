@@ -5,7 +5,7 @@ tags: [ java ]
 toc: true
 ---
 
-###  recursive call (재귀호출)
+##  recursive call (재귀호출)
 
 ```java
 int result = 1;
