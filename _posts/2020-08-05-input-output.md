@@ -73,25 +73,23 @@ System.out.printf("%1$tY-%1$tm-%1td %1$tH:%1$tM:%1$tS\n", today);
 
 ## 키보드 입력 받기
 
-### System.in과 java.util.Scanner
-
 1. 키보드로 입력한 데이터를 읽을 때 사용할 도구 준비
 
-   : `java.io.InputStream keyboard = System.in`
+   - `java.io.InputStream keyboard = System.in`
 
 2. 키보드를 스캐너에 연결한다
 
    - inputStream은 바이트 단위로 읽는 기능이 있다. 자바에서는 바이트를 개발자가 원하는 값으로 바꿔주는 기능을 제공한다. 이 기능을 가지고 있는 도구가 `java.util.Scanner`이다. 
 
-   : `java.util.Scanner keyScan = new java.util.Scanner(keyboard)`
+   - `java.util.Scanner keyScan = new java.util.Scanner(keyboard)`
 
 3. 스캐너 도구를 사용하여 문자열/int 등 개발자가 원하는 값으로 바꾼다.
 
-   :`String str = keyScan.nextLine()`
+   - `String str = keyScan.nextLine()`
 
 4. 스캐너는 사용 후 키보드와의 연결을 끊고 닫는다. 
 
-   : `keyScan.close()`
+   - `keyScan.close()`
 
 > `System.out`: 표준 출력 장치. 즉 콘솔(모니터, 명령창)을 가리킨다.
 >
