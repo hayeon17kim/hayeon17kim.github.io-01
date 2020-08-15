@@ -1,5 +1,5 @@
 ---
-title: ":coffee: 입력과 출력"
+title: ":coffee: [Java] 입력과 출력"
 categories: TIL
 tags: [ TIL ]
 toc: true

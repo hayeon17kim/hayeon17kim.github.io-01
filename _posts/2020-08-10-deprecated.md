@@ -1,5 +1,5 @@
 ---
-title: ":coffee: Java - @deprecated"
+title: ":coffee: [Java] @deprecated"
 categories: TIL
 tags: [ TIL ]
 ---

@@ -1,5 +1,5 @@
 ---
-title: ":coffee: 클래스 로딩 과정"
+title: ":coffee: [Java] 클래스 로딩 과정"
 categories: java
 tags: [ java ]
 ---

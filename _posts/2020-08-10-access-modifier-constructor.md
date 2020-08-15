@@ -1,5 +1,5 @@
 ---
-title: ":coffee: 접근 제어자와 생성자"
+title: ":coffee: [Java] 접근 제어자와 생성자"
 categories: java
 tags: [ java ]
 ---
