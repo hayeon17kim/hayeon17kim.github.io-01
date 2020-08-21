@@ -287,6 +287,8 @@ console.log(p0) // Person {}
 // new와 함께 함수 호출: 비어있는 객체를 만들고 객체를 반환한다.
 ```
 
+
+
 ```javascript
 function Person(){}
 var p = new Person();
@@ -333,7 +335,7 @@ var p2 = new Person('monica');
 document.write(p2.introduce() + "<br />");
 ```
 
-생성자 내에서 객체의 프로퍼티를 정의하고 있다. 이러한 작업을 **초기화**라고 한다. 이를 통해서 코드의 재사용성이 높아졌다. 생성자 함수는 일반 함수와 구분하기 위해서 첫글자를 대문자로 표시한다.
+생성자 내에서 객체의 프로퍼티를 정의하고 있다. 이러한 작업을 초기화라고 한다. 이를 통해서 코드의 재사용성이 높아졌다. 생성자 함수는 일반 함수와 구분하기 위해서 첫글자를 대문자로 표시한다.
 
 
 
@@ -483,7 +485,7 @@ function add(target, eventType, eventHandler, useCapture) {
 
 function clickHandler(event) {
     var nav = document.getElementById('list');
-    for (var i = 0; i < nav. )
+    for (var i = 0; )
 }
 ```
 
