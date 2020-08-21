@@ -160,7 +160,7 @@ function add(target, eventType, eventHandler, useCapture) {
 
 function clickHandler(event) {
     var nav = document.getElementById('list');
-    for (var i = 0; )
+    for (var i = 0; i < nav. )
 }
 ```
 
