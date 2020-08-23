@@ -1,5 +1,5 @@
 ---
-title: ":yellow_heart: [JS] 생활코딩 19: 함수지향: 함수호출"
+title: ":yellow_heart: [JS] 생활코딩 19: 함수호출"
 categories: TIL
 tags: [ TIL ]
 toc: true
