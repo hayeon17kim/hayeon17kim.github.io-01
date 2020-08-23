@@ -1,5 +1,5 @@
 ---
-title: ":yellow_heart: [JS] 생활코딩 20:객체지향 프로그래밍"
+title: ":yellow_heart: [JS] 생활코딩 20: 객체지향 프로그래밍"
 categories: JavaScript
 tags: [ JavaScript ]
 toc: true
