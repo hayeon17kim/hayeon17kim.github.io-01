@@ -1,7 +1,7 @@
 ---
 title: ":yellow_heart: [JS] 생활코딩 23: 함수와 this"
-categories: TIL
-tags: [ TIL ]
+categories: JavaScript
+tags: [ JavaScript ]
 toc: true
 ---
 
