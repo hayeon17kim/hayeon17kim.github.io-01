@@ -1,7 +1,7 @@
 ---
-title: ":yellow_heart: [JS] 생활코딩 20: 생성자와 new"
-categories: TIL
-tags: [ TIL ]
+title: ":yellow_heart: [JS] 생활코딩 21: 생성자와 new"
+categories: JavaScript
+tags: [ JavaScript ]
 toc: true
 ---
 

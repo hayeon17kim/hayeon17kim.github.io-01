@@ -1,5 +1,5 @@
 ---
-title: ":yellow_heart: JavaScript 객체지향: 전역객체"
+title: ":yellow_heart: [JS] 생활코딩 22: 전역객체"
 categories: TIL
 tags: [ TIL ]
 toc: true
