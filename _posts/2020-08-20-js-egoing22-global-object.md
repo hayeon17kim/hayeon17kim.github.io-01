@@ -1,7 +1,7 @@
 ---
 title: ":yellow_heart: [JS] 생활코딩 22: 전역객체"
-categories: TIL
-tags: [ TIL ]
+categories: JavaScript
+tags: [ JavaScript ]
 toc: true
 ---
 
