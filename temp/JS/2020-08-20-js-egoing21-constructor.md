@@ -7,7 +7,10 @@ toc: true
 
 ## 생성자와  new
 
-자바스크립트는 어떠한 객체지향 언어와도 같지 않다. Prototype-based programming. 
+- 자바스크립트는 어떠한 객체지향 언어와도 같지 않다. 
+- 자바스크립트는 `Prototype-based programming` 언어이다.
+
+> prototype-based programming? 객체지향 프로그래밍의 한 갈래로 클래스가 없고, 클래스 기반 언어에서 상속을 사용하는 것과 다르게 객체를 원형(프로토타입)으로 하여 복제의 과정을 통해 객체의 동작 방식을 다시 사용할 수 있다. 클래스리스(class-less), 프로토타입 지향(prototype-oriented), 인스턴스 기반(instance-based ) 프로그래밍이라고도 한다.
 
 ### 객체
 
