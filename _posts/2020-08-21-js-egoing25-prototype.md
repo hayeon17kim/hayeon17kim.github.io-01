@@ -49,3 +49,4 @@ console.log(o.ultraProp) // true
 한편 `Super.prototype = Ultra.prototype`으로 하면 안된다. 이렇게 하면 `Super.prototype`의 값을 변경하면 그것이 `Ultra.prototype`도 변경하기 때문이다.
 
 `Super.prototype = new Ultra()`를 실행하면 `Ultra.prototype`의 원형으로 하는 객체가 생성되기 때문에 `new Ultra()`를 통해 만들어진 객체에 변화가 생겨도 `Ultra.prototype`의 객체에는 영향을 주지 않는다.
+
