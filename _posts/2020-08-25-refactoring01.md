@@ -155,28 +155,29 @@ public class Customer {
 
 ```
 
-> Vector란?
->
-> - ArrayList와 동일한 내부구조
->   - 값이 추가되면 자동으로 크기가 조절되며 그 다음 객체들은 한 자리씩 뒤로 이동한다.
-> - ArrayList와 차이점: 동기화
->   - Vector: 동기화된 메서드로 구성되어 있어 멀티스레드가 동시에 메서드를 실행할 수 없고, 하나의 실행을 완료해야만 다른 스레드들이 실행될 수 있다. 
->   - ArrayList: 자동동기화 기능이 빠져 있고, 동기화 옵션이 존재한다. Vector에 비해 속도가 빠르기에 보다 많이 쓰인다.
->   - 장점: 멀티스레드 환경에서 안전하게 객체를 추가하고 삭제할 수 있다.
->   - 단점: 스레드가 1개일 때도 동기화를 하기 때문에 ArrayList보다 성능이 떨어진다.
+### Vector와 ArrayList
+- 공통점: 동일한 내부구조를 갖는다.
+  - 값이 추가되면 자동으로 크기가 조절되며 그 다음 객체들은 한 자리씩 뒤로 이동한다.
+- 차이점: 동기화 여부
+  - Vector: 동기화된 메서드로 구성되어 있다. 따라서 멀티스레드 환경에서 안전하게 객체를 추가하고 삭제할 수 있는 장점이 있지만, 스레드가 1개일 때도 동기화를 하기 때문에 ArrayList보다 성능이 떨어진다는 단점이 있다.
+  - ArrayList: 자동 동기화 기능이 빠져 있고, 동기화 옵션이 존재한다. Vector에 비해 속도가 빨라 보다 많이 쓰인다.
+### Enumeration과 Iterator
+
+- 인터페이스: 직접 new 연산자를 통해 객체를 생성할 수 없으며, 선언된 메서드는 그 인터페이스를 사용하는 클래스로 구현해서 사용해야 한다. 
+  - 사용법
+    - `(컬렉션 객체).iterator()`
+    - `(컬렉션 객체).elements()`
+- 메서드
+  - 객체들의 집합에서 각각의 객체들을 한 순간에 처리할 수 있는 메서드를 제공한다.
+  - Enumeration의 `hasMoreElements()` == Iterator의 `hasNext()`
+  - Enumeration의 `nextElement()` == Iterator의 `next()`
+- Enumeration은 Collection 프레임워크가 만들어지기 전, Iterator의 이전 버전이다. 기능이 같기 때문에 가능하면 Enumeration 대신 Iteration 사용을 권장하고 있다.
 
 
 
-> Enumeration 인터페이스란? 
->
-> - 객체들의 집합(Vector)에서 각각의 객체들을 한 순간에 처리할 수 있는 메서드를 제공하는 컬렉션이다. 
-> - 인터페이스이므로, 직접 new 연산자를 이용하여 객체를 생성할 수 없으며, Enumeration 인터페이스에 선언된 메서드는 그 인터페이스를 사용하는 클래스로 구현해서 사용해야만 한다. 
-> - Collection 프레임워크가 만들어지기 전, **Iterator의 이전 버전**이다. 가능하면 Enumeration 대신 Iteration 사용을 권장하고 있다.
-> - Enumeration 인터페이스 메서드
->   - `hasMoreElements()`: Iterator의 `hasNext()`와 같음
->   - `nextElement()` : Iterator의 `next()`와 같음
->
-> 
+> List 혹은 Set 인터페이스를 구현하는 컬렉션은 iterator()가 컬렉션의 특징에 맞게 설계가 되어 있다.
+
+> Vector 클래스의 elements()라는 메서드는 객체의 모든 요소들을 Enumeration 객체로 반환한다.
 
 ## 원본 코드의 문제점
 
@@ -618,7 +619,7 @@ for (int i = 0; i < str.length(); i++) {
 }
 System.out.println(result);
 ```
- 
+
 
 ```java
 Scanner sc = new Scanner(System.in);
