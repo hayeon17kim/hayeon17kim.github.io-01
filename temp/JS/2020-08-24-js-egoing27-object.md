@@ -12,8 +12,25 @@ toc: true
 - 객체의 가장 기본적인 형태를 가지고 있는 객체
 - 아무것도 상속받지 않는 순수한 객체
 - 자바스크립트에서 값을 저장하는 기본적인 단위
-
 - 자바스크립트의 모든 객체는 Object 객체를 상속받는다. 따라서 모든 객체는 Object 프로퍼티를 가지고 있다.
+- Object.prototype은 모든 객체가 사용할 수 있는 기능이다. 
+  - 모든 객체가 공통적으로 사용해야 할 기능이 있다면 Object.prototype에 기능을 추가함으로써 목적을 달성할 수 있다.
+
+ 
+
+## Object 메서드 사용하기
+
+```java
+//Object.keys()
+var arr = ["a", "b", "c"];
+console.log('Object.keys(arr)')j, Ob
+```
+
+
+
+
+
+
 
 
 
