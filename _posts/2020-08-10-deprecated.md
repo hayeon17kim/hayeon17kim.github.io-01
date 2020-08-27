@@ -1,12 +1,7 @@
 ---
 title: ":coffee: [Java] @deprecated"
-<<<<<<< HEAD
 categories: java
 tags: [ java ]
-=======
-categories: TIL
-tags: [ TIL ]
->>>>>>> 27ff4e73f87d10166582867c37b1c6c3cfdd44cd
 ---
 
 ## `@deprecated`란?
