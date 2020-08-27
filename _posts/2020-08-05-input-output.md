@@ -1,13 +1,7 @@
 ---
 title: ":coffee: [Java] 입력과 출력"
-<<<<<<< HEAD
 categories: java
 tags: [ java ]
-=======
-categories: TIL
-tags: [ TIL ]
->>>>>>> 27ff4e73f87d10166582867c37b1c6c3cfdd44cd
-toc: true
 ---
 
 ## 콘솔로 출력하기 
