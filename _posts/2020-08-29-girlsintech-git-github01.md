@@ -1,5 +1,5 @@
 ---
-title: "걸스인텍: 협업에 반드시 필요한 Git? Github? (1) : Computational Thinking, 깃허브 튜토리얼"
+title: "걸스인텍: 협업에 반드시 필요한 Git? Github? (1)"
 categories: git
 tags: [ git ]
 ---
