@@ -1,8 +1,7 @@
 ---
 title: ":yellow_heart: [JS] 생활코딩 28: 데이터 타입"
-categories: TIL
-tags: [ TIL ]
-toc: true
+categories: JavaScript
+tags: [ JavaScript ]
 ---
 
 # 데이터 타입

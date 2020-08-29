@@ -1,8 +1,7 @@
 ---
 title: ":yellow_heart: [JS] 생활코딩 30: 재귀함수"
-categories: TIL
-tags: [ TIL ]
-toc: true
+categories: JavaScript
+tags: [ JavaScript ]
 ---
 
 # 재귀함수
