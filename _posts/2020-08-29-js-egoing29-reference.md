@@ -1,5 +1,5 @@
 ---
-title: ":yellow_heart: [JS] 생활코딩: 참조"
+title: ":yellow_heart: [JS] 생활코딩 29: 참조"
 categories: TIL
 tags: [ TIL ]
 toc: true
