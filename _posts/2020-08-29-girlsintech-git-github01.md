@@ -1,7 +1,7 @@
 ---
 title: "걸스인텍: 협업에 반드시 필요한 Git? Github? (1)"
 categories: git
-tags: [ git ]
+tags: [ git, seminar ]
 ---
 
 ![girls-in-tech](https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/117404539_2751357635101221_1385803360028054243_n.jpg?_nc_cat=106&_nc_sid=110474&_nc_eui2=AeGWnR5R-9CCdtOsY78D2JM7YYRYFmQi-e5hhFgWZCL57r-JVW1kPsIZYe5p1Bib86rGLq972TEar4UJBLYeR1Bp&_nc_ohc=eJ1QTMTEw2oAX_geJDx&_nc_ht=scontent-ssn1-1.xx&oh=3dc27ed256719945875cd135f3022f13&oe=5F6B056C)

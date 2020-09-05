@@ -66,7 +66,7 @@ $lighter-gray: mix(#fff, $gray, 70%) !default;
 $background-color: white !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
-$text-color: $dark-gray !default;
+$text-color: rgb(47, 62, 84);//$dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 30%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
