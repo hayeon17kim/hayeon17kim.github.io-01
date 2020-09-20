@@ -1,40 +1,35 @@
-# 👩‍💻 BITFLIX 🎬
-비트캠프 자바 과정 1차 미니 해커톤에서 진행한 프로젝트입니다. (김하연, 최희진) 
+## Hi there, I'm Hayeon👋
 
-## 주요 기능
-
-- 멤버의 취향 장르에 따라 달라지는 화면 제공
-- 추천 시스템
-- 인기순, 장르별 영화 필터링
-
-# 일지
-
-## 2020-09-17
-
-- 
+### I'm a Student, Developer, and Writer! 
+- 🏃‍♀️ I'm currently working on something cool 😎
+- 🌱 I'm currently learning Java ☕
+- 👀 I'm looking to collaborate with others 🤝
+- 🎯 2020 Goals : acquire ability to make complete website from zero on my own 👩‍💻
+- 💁‍♀️ I can speak 한국어  / English  / Español
 
 
+### Spotify Playing 🎧
+[<img src="https://now-playing-codestackr.vercel.app/api/spotify-playing" alt="codeSTACKr Spotify Playing" width="350" />](https://open.spotify.com/track/4JvqE1QX2hcwluWDUs29dT)
 
-## 2020-09-18
+<br />
 
-### 기능 추가
-    - `loadMembers()` 작성: Member 데이터를 파일에서 불러오는 메서드 작성
+### Get in touch
+
+[<img align="left" alt="hayeon17kim.github.io" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg"/>][website]
+[<img align="left" alt="https://twitter.com/MONI56219559" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+[<img align="left" alt="https://www.instagram.com/monicayeoni/" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
 
-### Tree-shaking
-전혀 사용하지 않은 필드와 메서드가 남아있어서 삭제하였다.
-    - Member 도메인 클래스에 있는 AllMovieHandler 필드 삭제
-        - add(String title) 메서드 삭제
 
-### Bug
+### Languages and Tools
+[<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png" />][webdevplaylist]
+[<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />][webdevplaylist]
+[<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />][cssplaylist]
+[<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />][jsplaylist]
 
-- 한 회원이 본 영화가 다른 회원의 본 영화에도 반영이 된다.
-- 보고싶은 영화가 두 번 출력된다.
+<br />
+<br />
 
-```java
-김하연,eungeun,1111,로맨스,다크나이트,라라랜드:캐롤:미드소마
-최희진,eungeun2,1111,액션,다크나이트다크나이트,라라랜드:캐롤:미드소마
-```
-
-### 느낀점
-일주일만 지나도 자신이 작성한 코드가 기억나지 않는다는 게 실감이 되었다.
+[website]: https://hayeon17kim.com
+[twitter]: https://twitter.com/MONI56219559
+[instagram]: https://www.instagram.com/monicayeoni/
