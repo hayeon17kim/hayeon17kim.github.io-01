@@ -4,6 +4,10 @@ categories: discrete-mathematics
 tags: [ discrete-mathematics ]
 ---
 
+신흥철 교수님의 이산수학 1강과 2강을 듣고 정리하였습니다.
+
+
+
 ## 이산수학
 
 - 불연속을 다루는 수학이다.
