@@ -1,3 +1,7 @@
+
+
+
+
 ## HTTP 메시지
 
 HTTP 메시지는 서버와 클라이언트 간에 **데이터가 교환되는 방식**이다. 메시지의 타입은 요청(request)와 응답(response)로 나뉘어진다.
@@ -32,21 +36,41 @@ HTTP/2의 binary framing 매커니즘은 사용 중인 API나 설정 파일을 �
 
 ### start line
 
-- HTTP 메서드
+- HTTP 메서드(`GET`, `POST`, `PUT`, `HEAD`, `OPTIONS`)
 - 요청 타겟
+  - origin 형식
+    - 끝에 `?`와 문자열이 붙는 절대 경로로, 가장 일반적인 형식이다. 
+    - `GET`, `POST`, `HEAD`, `OPTIONS` 메서드와 함께 사용한다.
+  - absolute 형식
+    - 완전한 URL 형식
+    - 프록시에 연결하는 경우 `GET`과 함께 사용
+  - authority 형식
+    - 도메인 이름 및 옵션 포트로 이루어진 URL의 authority component
+    - HTTP 터널을 구축하는 경우 `CONNECT`와 함께 사용
+  - asterisk 형식
+    - `OPTIONS`와 함께 `*`로 간단하게 서버 전체를 나타낸다
+    - `OPTIONS * HTTP/1.1`
 - HTTP 버전
 
 
 
 ### Header
 
-- General Header: 메시지 전체에 적용
+![HTTP-message-request-header](https://mdn.mozillademos.org/files/13821/HTTP_Request_Headers2.png)
+
+- General Header
+  - 메시지 전체에 적용
+  - `Via`
 - Request Header
+  - `User-Agent`, `Accept-Type`과 같은 헤더는 요청의 내용을 좀 더 구체화시키고(`Accept-Language`),  컨텍스트를 제공하기도 하며 (`Referer`), 조건에 따른 제약 사항을 가하기도 하면서(`If-None`) 요청 내용을 수정
 - Entity Header
+  - `Content-Length`와 같은 헤더는 요청 본문에 적용된다.
 
 
 
 ### Body
+
+본문(Body)는 있을 수도 있고, 없을 수도 있다. 리소스를 가져오는 요청은 본문이 필요 없지만 POST처럼 서버에 데이터를 전송하는 요청은 본문이 있다.
 
 - 단일-리소스 본문(single-resource bodies)
 - 다중-리소스 본문(multiple-resource bodies)
@@ -57,26 +81,27 @@ HTTP/2의 binary framing 매커니즘은 사용 중인 API나 설정 파일을 �
 
 ### status line
 
-- 프로토콜 버전
-- 상태 코드
-- 상태 텍스트
+- 예) `HTTP/1.1 404 Not Found`
+
+- 프로토콜 버전, 상태 코드, 상태 텍스트로 구성되어 있다.
 
 
 
 ### Header
 
-- General Header
-- Response Header
-- Entity Header
+![HTTP-message-response-header](https://mdn.mozillademos.org/files/13823/HTTP_Response_Headers2.png)
+
+응답 메시지 헤더와 마찬가지로 종류가 General Header, Response Header, Entity Header로 나뉘어진다.
 
 
 
 ### Body
 
-- 단일-리소스 본문(single-resource bodies)
-  - 길이를 아는 단일 파일로 구성
-  - 길이를 모르는 단일 파일로 구성
+요청과 마찬가지로 모든 응답에 본문이 들어가지는 않는다. 201, 204와 같은 상태 코드를 가진 응답에는 보통 본문이 없다. 본문은 다음 세 가지로 나누어진다.
 
+- 길이를 아는 단일-리소스 본문(single-resource bodies)
+- 길이를 모르는 단일-리소스 본문
+  - Transfer-Encoding이 chunked로 설정되어 있으멷, 파일은 청크로 나뉘어 인코딩되어 있다.
 - 다중-리소스 본문(multiple-resource bodies)
 
 
@@ -92,28 +117,12 @@ HTTP/2의 binary framing 매커니즘은 사용 중인 API나 설정 파일을 �
 
 
 
-### HTTP/2의 구조
+### HTTP/2
 
 ![http2BinaryFraming](https://mdn.mozillademos.org/files/13819/Binary_framing2.png)
 
-HTTP/1.x 메시지를 프레임으로 나누어 스트림에 끼워 넣는다.
+- HTTP/1.x 메시지를 프레임으로 나누어 스트림에 끼워 넣는다.
 
-데이터와 헤더 프레임이 분리되었기 때문에 헤더를 압축할 수 있다.
+- 데이터와 헤더 프레임이 분리되었기 때문에 헤더를 압축할 수 있다.
 
-스트림 여러개를 하나로 묶을 수 있어서(멀티 플렉싱), 기저에 수행되는 TCP 연결이 좀 더 효율적이게 이루어진다.
-
-
-
-
-
-모바일에서 사용하는 게 좋다. 서버에서 설정을 안하면 아예 안됨. 모바일 구동환경이 2에 특화하 되어 잇다. 서버에서 
-
-
-
-
-
->  time interval
-
->  h2db 
-
-오름차순으로 정렬. 
+- 스트림 여러개를 하나로 묶을 수 있어서 기저에 수행되는 TCP 연결이 좀 더 효율적으로 이루어진다.
