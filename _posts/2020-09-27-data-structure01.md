@@ -1,5 +1,5 @@
 ---
-title: "자바로 배우는 핵심 자료구조와 알고리즘 #1장"
+title: "핵심 자료구조와 알고리즘 #1장: 인터페이스"
 categories: data-structure
 tags: [ data-structure, java ]
 ---
