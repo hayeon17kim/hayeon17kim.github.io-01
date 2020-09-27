@@ -1,5 +1,5 @@
 ---
-title: "이산수학 #3: 변수를 포함한 명제와 한정자, 논리와 추론"
+title: "이산수학 #3강: 변수를 포함한 명제와 한정자, 논리와 추론"
 categories: discrete-mathematics
 tags: [ discrete-mathematics ]
 ---
