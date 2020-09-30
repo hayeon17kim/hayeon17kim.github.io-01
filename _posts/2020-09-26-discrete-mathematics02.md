@@ -33,7 +33,7 @@ tags: [ discrete-mathematics ]
 | ¬(¬p) ≡ p                                        | 이중 부정법칙(Double Negation Law)   |
 | p∧p ≡ p<br />p∨p ≡ p                             | 멱등법칙(Idempotent Law)             |
 | p∧q ≡ q∧p<br />p∨q ≡ q∨p                         | 교환법칙(Commutative Law)            |
-| p∧q)∧r ≡ p∧(q∧r)<br />(p∨q)∨r ≡ p∨(q∨r)          | 결합법칙(Associative Law)            |
+| (p∧q)∧r ≡ p∧(q∧r)<br />(p∨q)∨r ≡ p∨(q∨r)         | 결합법칙(Associative Law)            |
 | p∨(q∧r) ≡ (p∨q)∧(p∨r)<br />p∧(q∨r) ≡ (p∧q)∨(p∧r) | **분배법칙(Distributive Law)**       |
 | ¬(p∧q) ≡ ¬p∨¬q<br />¬(p∨q) ≡ ¬p∧¬q               | **드모르간의 법칙(De Morgan's Law)** |
 | p∧(p∨q) ≡ p<br />p∨(p∧q) ≡ p                     | **흡수법칙(Absorption Law)**         |
