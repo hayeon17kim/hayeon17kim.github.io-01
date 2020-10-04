@@ -3,7 +3,7 @@ title: "이산수학 #7강: 집합의 대수법칙"
 categories: discrete-mathematics
 tags: [ discrete-mathematics ]
 ---
-
+{% raw %}
 신흥철 교수님의 이산수학 7강을 듣고 정리하였습니다.
 
 ## 집합의 대수법칙
@@ -77,3 +77,5 @@ tags: [ discrete-mathematics ]
   - {a, b, c}⊂A
   - {a, b, c}∪Ø=A
   - {a, b, c}∩Ø=Ø
+
+{% endraw %}
