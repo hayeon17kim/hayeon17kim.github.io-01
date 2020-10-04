@@ -1,3 +1,9 @@
+---
+title: "이산수학 #8강: 수의 표현"
+categories: discrete-mathematics
+tags: [ discrete-mathematics ]
+---
+
 신흥철 교수님의 이산수학 8강을 듣고 정리하였습니다.
 
 ## 수의 종류
