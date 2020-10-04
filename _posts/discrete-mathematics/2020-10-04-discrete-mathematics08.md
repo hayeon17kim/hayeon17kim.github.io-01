@@ -8,7 +8,7 @@ tags: [ discrete-mathematics ]
 
 ## 수의 종류
 
-![img](http://www.ktword.co.kr/img_data/4422_2.JPG)
+![image](https://user-images.githubusercontent.com/50407047/95015491-2de17000-0688-11eb-8e31-b5f9df637b00.png)
 
 ### 자연수 N
 
