@@ -111,8 +111,8 @@ c=a+bi(a: c의 실수부, b: c의 허수부)로 표현하되, 연산은 아래�
 
 정수 n을 d로 나누어 몫 q를 구하는 연산 또는 n=dq를 만족하는 정수 q를 구하는 연산
 
-*   d|n: d로 n을 나눈다. (d≠0)
-*   d∤n: d는 n을 나누지 못한다.
+*   `d|n`: d로 n을 나눈다. (d≠0)
+*   `d∤n`: d는 n을 나누지 못한다.
 
 *   q: 몫(quotient)
 *   d: n의 약수(divisor) 또는 인수(factor)
@@ -120,18 +120,14 @@ c=a+bi(a: c의 실수부, b: c의 허수부)로 표현하되, 연산은 아래�
 
 #### 나누기 연산의 규칙(a, b, c, d, m, n은 정수)
 
-*   d|m이고 d|n이면 d|(m+n)
-
-    *   m=dk, n=dl (k, l∈Z) ∴m+n=dk+dl=d(k+l)
-*   d|m이고 d|n이면 d|(m-n)
-
-    *   m=dk, n=dl ∴m-n=dk-dl=d(k-l)
-*   d|m이면 d|mn
-
-    *   m=dk, mn=dkn=d(kn)
-*   a|b이고 b|c이면 a|c
-
-    *   b=ak, c=bl c=akl=a(kl)
+*   `d|m`이고 `d|n`이면 `d|(m+n)`
+*   m=dk, n=dl (k, l∈Z) ∴m+n=dk+dl=d(k+l)
+*   `d|m`이고 `d|n`이면 `d|(m-n)`
+*   m=dk, n=dl ∴m-n=dk-dl=d(k-l)
+*   `d|m`이면 `d|mn`
+*   m=dk, mn=dkn=d(kn)
+*   `a|b`이고 `b|c`이면 `a|c`
+*   b=ak, c=bl c=akl=a(kl)
 
 ### 나머지 연산 n mod d
 
@@ -142,9 +138,9 @@ c=a+bi(a: c의 실수부, b: c의 허수부)로 표현하되, 연산은 아래�
 *   d: n의 약수(divisor) 또는 인수(factor)
 *   n: d의 배수
 *   r: 나머지(remainder), 0≤r<d
-*   **n mod d = 0 ⇔ d|n**
+*   **n mod d = 0 ⇔ `d|n`**
 
-## 수 체계
+## 수 체계 
 
 ### 10진수(Decimal Number)
 
@@ -188,7 +184,7 @@ c=a+bi(a: c의 실수부, b: c의 허수부)로 표현하되, 연산은 아래�
 
     = a<sub>k</sub>a<sub>k-1</sub> …a<sub>1</sub>a<sub>0</sub>a<sub>-1</sub>a<sub>-2</sub>…a<sub>-l</sub> …
 
-    = = a<sub>k</sub>8<sup>k</sup>+a<sub>k-1</sub>8<sup>k-1</sup>+…+a<sub>1</sub>8<sup>1</sup>+a<sub>0</sub>8<sup>0</sup> +a<sub>-1</sub>8<sup>-1</sup>+a<sub>-2</sub>8<sup>-2</sup>+…+a<sub>-l</sub>8<sup>-l</sup>+…
+    = a<sub>k</sub>8<sup>k</sup>+a<sub>k-1</sub>8<sup>k-1</sup>+…+a<sub>1</sub>8<sup>1</sup>+a<sub>0</sub>8<sup>0</sup> +a<sub>-1</sub>8<sup>-1</sup>+a<sub>-2</sub>8<sup>-2</sup>+…+a<sub>-l</sub>8<sup>-l</sup>+…
 
 ### 16진수 (Hexadecimal Number)
 
