@@ -1,3 +1,9 @@
+---
+title: "모두의 네트워크 #1장: 네트워크 첫걸음"
+categories: learning-js
+tags: [ learning-js, javascript ]
+---
+
 # 1장: 네트워크 첫걸음
 
 ## 1. 네트워크 구조
