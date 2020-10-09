@@ -1,7 +1,7 @@
 ---
 title: "모두의 네트워크 #1장: 네트워크 첫걸음"
-categories: learning-js
-tags: [ learning-js, javascript ]
+categories: network-for-everyone
+tags: [ network-for-everyone ]
 ---
 
 # 1장: 네트워크 첫걸음
