@@ -123,6 +123,8 @@ tags: [ discrete-mathematics ]
 
 ## 보수의 10진수 변환
 
+![image](https://user-images.githubusercontent.com/50407047/95659256-c1201700-0b5a-11eb-99f3-00d3dc40c9b4.png)
+
 - 1의 보수**(2의 보수)**를 10진수로 변환하는 방법
 
   - 방법1: -(2^n-1^-1)**(-2^n^-1)**+절대치 비트의 10진수 표현
