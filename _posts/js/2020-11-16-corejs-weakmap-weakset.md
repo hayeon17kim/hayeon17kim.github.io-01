@@ -1,5 +1,5 @@
 ---
-title: "코어 자바스크립트 #자료구조와 자료형: 위크맵과 위크셋'"
+title: "코어 자바스크립트 #자료구조와 자료형: 위크맵과 위크셋"
 categories: JavaScript
 tags: [ JavaScript, corejs ]
 ---
@@ -220,7 +220,7 @@ messages[0][isRead] = true;
 
 > 심볼을 이용하면 hidden 프로퍼티를 만들 수 있다. 심볼은 서드파티 코드에서 접근할 수 없기 때문에, 심볼을 사용하면 서드파티 코드가 모르게 객체에 식별자를 부여할 수 있다.
 
-**Q2. ** 읽은 날짜 저장하기
+**Q2.** 읽은 날짜 저장하기
 
 ```js
 let messages = [
@@ -233,6 +233,3 @@ let readMap = new WeakMap();
 
 readMap.set(messages[0], new Date(2017, 1, 1));
 ```
-
-
-
