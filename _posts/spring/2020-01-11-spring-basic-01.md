@@ -1,3 +1,9 @@
+---
+title: "스프링 입문 #1 프로젝트 환경설정"
+categories: spring
+tags: [ spring ]
+---
+
 # Section 1. 프로젝트 환경설정
 
 ## 1강. 프로젝트 생성
