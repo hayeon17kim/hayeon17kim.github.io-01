@@ -193,3 +193,4 @@ memberService: class hello.hellospring.service.MemberService$$EnhancerBySpringCG
 ```
 
 memberService를 가지고 복제를 해서 코드를 조작하는 기술이다. 스프링 컨테이너가 memberService에 AOP가 적용이 되면 프록시 memberService를 통해서 AOP가 다 실행이 되고 joinPoint.proceed하면 실제 memberService가 호출된다.
+
