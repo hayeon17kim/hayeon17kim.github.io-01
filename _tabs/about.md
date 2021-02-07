@@ -1,7 +1,7 @@
 ---
 title: About
 icon: fas fa-info
-order: 5
+order: 4
 ---
 
 # 김하연
