@@ -25,7 +25,7 @@ description: >- # used by seo meta and the atom feed
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://hayeon17kim.github.io/"
 
-author: Hayeon Kim # change to your full name
+author: "Hayeon Kim" # change to your full name
 
 github:
   username: hayeon17kim # change to your github username
@@ -34,7 +34,7 @@ twitter:
   username: MONI56219559 # change to your twitter username
 
 social:
-  name: Hayeon Kim # it will shows as the copyright owner in Footer
+  name: "Hayeon Kim" # it will shows as the copyright owner in Footer
   email: hayeon17kim@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
